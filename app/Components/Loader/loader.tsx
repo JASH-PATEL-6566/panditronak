@@ -8,20 +8,26 @@ const loader = () => {
         const time = gsap.timeline({})
         time.from('.line_one .sholk span',{
           y:100,
-          duration:1.5,
+          duration:2,
           delay:0.5,
-          stagger:0.2
+          stagger:0.5
         },"maintext")
         time.from('.line_two .sholk span',{
           y:80,
-          duration:1.5,
-          delay:2,
-          stagger:0.2
+          duration:2,
+          delay:3,
+          stagger:0.5
         },"maintext")
+        time.to('.loader',{
+            y:'-100vh',
+            duration:1,
+            delay:8,
+            stagger:0.2
+          },"maintext")
       },[])
   return (
     <>
-    <div className="w-full h-screen fixed top-0 bg-[#F5EFE7] flex justify-center items-center">
+    <div className="loader w-full h-screen fixed top-0 bg-[#F5EFE7] flex justify-center items-center">
       <div className="loder_text flex gap-1 flex-col">
         <div className="line_one h-[11vh] relative overflow-hidden flex justify-center items-center">
             <h1 className="sholk font-[pandit_text] text-6xl font-black text-[#D7492B] flex gap-3">

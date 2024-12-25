@@ -5,6 +5,8 @@ const page = () => {
   return (
     <>
     <Loader />
+    <div className="main">
+    </div>
     </>
   )
 }
