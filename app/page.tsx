@@ -1,8 +1,11 @@
 import React from 'react'
+import Loader from './Components/Loader/loader'
 
 const page = () => {
   return (
-    <div>hello</div>
+    <>
+    <Loader />
+    </>
   )
 }
 
