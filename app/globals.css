@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 40%;
+  opacity: 30%;
   z-index: -99;
   background-image: url(../public/image/panditimage.png);
   background-size: cover;

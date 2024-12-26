@@ -27,7 +27,7 @@ const loader = () => {
       },[])
   return (
     <>
-    <div className="loader w-full h-screen fixed top-0 bg-[#F5EFE7] flex justify-center items-center">
+    <div className="loader w-full h-screen fixed z-[999] top-0 bg-[#F5EFE7] flex justify-center items-center">
       <div className="loder_text flex gap-1 flex-col">
         <div className="line_one h-[11vh] relative overflow-hidden flex justify-center items-center">
             <h1 className="sholk font-[pandit_text] text-6xl font-black text-[#D7492B] flex gap-3">
