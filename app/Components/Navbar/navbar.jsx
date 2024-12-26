@@ -1,7 +1,19 @@
-import React from 'react'
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import React from "react";
 
 const navbar = () => {
+  useGSAP(()=>{
+    gsap.from('.nav',{
+      opacity:0,
+      duration:1,
+      delay:9
+    })
+  })
   return (
+   
+
     <>
     <div className="fixed z-[99] top-6 w-11/12 left-1/2 -translate-x-1/2">
         <div className="nav rounded-full px-6 py-3 w-full flex justify-between items-center backdrop-blur-md bg-white/30">

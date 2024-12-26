@@ -10,37 +10,37 @@ const hero = () => {
     time2.from('.pandit_text .text',{
       y:145,
       duration:2,
-      delay:1, 
+      delay:9, 
       stagger:0.5
     },"herotext")
     time2.from('.pandit_info .info',{
       y:80,
       duration:2,
-      delay:1,
+      delay:9,
       stagger:0.5
     },"herotext")
     time2.from('.pandit_subinfo .subinfo span',{
         y:'80',
         duration:2,
-        delay:1,
+        delay:9,
         stagger:0.2
       },"herotext")
       time2.from('.button .buttontext',{
         y:'80',
         duration:2,
-        delay:1,
+        delay:9,
         stagger:0.2
       },"herotext")
       time2.from('.f_left',{
         y:'80',
         duration:2,
-        delay:1,
+        delay:9,
         stagger:0.2
       },"herotext")
       time2.from('.f_right',{
         y:'80',
         duration:2,
-        delay:1,
+        delay:9,
         stagger:0.2
       },"herotext")
   },[])

@@ -7,7 +7,7 @@ import Work from './Components/Work/Work'
 const page = () => {
   return (
     <>
-    {/* <Loader /> */}
+    <Loader />
     <div className="relative min-h-screen overflow-y-auto">
       <div className="main"></div>
       <Navbar />
