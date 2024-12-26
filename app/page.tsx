@@ -13,7 +13,7 @@ const page = () => {
       <Navbar />
       <Hero />
       <Work />
-      {/* <div className=""></div> */}
+      
     </div>
     </>
   )

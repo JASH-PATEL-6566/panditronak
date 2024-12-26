@@ -22,3 +22,25 @@
   font-family: pandit_text;
 src: url('/Users/kenilavaiya/Desktop/panditronak/public/font/suisse init/SuisseIntl-Regular/SuisseIntl-Regular.woff2');
 }
+
+
+.work_heading{
+  font-size:xx-large;
+  font-weight: bold;
+  /* background-color: aqua; */
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.work_image{
+  height: 70%;
+  background-color: beige;
+  margin-inline: 10vh;
+  border-radius: 50px;
+}
+
+.work_desc{
+  height: 15%;
+  padding-top: 1vh;
+}

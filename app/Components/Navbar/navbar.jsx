@@ -8,7 +8,7 @@ const navbar = () => {
     gsap.from('.nav',{
       opacity:0,
       duration:1,
-      delay:9
+      delay:10
     })
   })
   return (
