@@ -115,7 +115,17 @@ const Connect = () => {
                   type="submit"
                   className=" px-5 py-3 rounded-full bg-[#d7482b15] hover:bg-[#D7492B] hover:text-white transition-colors"
                 >
-                  Let's talk
+                  <h4 className="relative group hover:cursor-pointer text-sm sm:text-base overflow-hidden">
+                    <div className="flex flex-col">
+                      <span className="group-hover:-translate-y-full transition-transform duration-300">
+                        Let's talk
+                      </span>
+                      <span className="absolute top-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        Let's talk
+                      </span>
+                    </div>
+                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#D7492B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  </h4>
                 </button>
               </div>
             </form>

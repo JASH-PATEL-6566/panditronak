@@ -9,6 +9,7 @@ import Footer from './Components/Footer/footer'
 
 const page = () => {
   // Shery.mouseFollower();
+  
   return (
     <>
     <Loader />

@@ -29,22 +29,36 @@ const navbar = () => {
 
           <div className="nav_left hidden md:flex gap-3 sm:gap-5 items-center">
             <h4 className="text-[#D7492B] font-bold text-xl sm:text-2xl">V.</h4>
-            <h4 className="relative group hover:cursor-pointer text-sm sm:text-base">
-              About
+            <h4 className="relative group hover:cursor-pointer text-sm sm:text-base overflow-hidden">
+              <div className="flex flex-col">
+                <span className="group-hover:-translate-y-full transition-transform duration-300">About</span>
+                <span className="absolute top-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">About</span>
+              </div>
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#D7492B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </h4>
-            <h4 className="relative group hover:cursor-pointer text-sm sm:text-base">
+            <h4 className="relative group hover:cursor-pointer text-sm sm:text-base overflow-hidden">
+              <div className="flex flex-col">
+                <span className="group-hover:-translate-y-full transition-transform duration-300">Work</span>
+                <span className="absolute top-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">Work</span>
+              </div>
+              <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#D7492B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            </h4>
+            
+            {/* <h4 className="relative group hover:cursor-pointer text-sm sm:text-base">
               Work
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#D7492B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-            </h4>
+            </h4> */}
           </div>
 
           {/* Mobile Logo */}
           <h4 className="md:hidden text-[#D7492B] font-bold text-xl">V.</h4>
 
           <div className="nav_right hidden md:block">
-            <h4 className="relative group hover:cursor-pointer text-sm sm:text-base">
-              Contact us
+          <h4 className="relative group hover:cursor-pointer text-sm sm:text-base overflow-hidden">
+              <div className="flex flex-col">
+                <span className="group-hover:-translate-y-full transition-transform duration-300">Contact us</span>
+                <span className="absolute top-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">Contact us</span>
+              </div>
               <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#D7492B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
             </h4>
           </div>

@@ -100,7 +100,13 @@ const hero = () => {
         </div>
         <div className="button absolute top-[70%] left-12 overflow-hidden">
           <div className="buttontext px-5 py-3 rounded-full bg-[#d7482b15] hover:bg-[#D7492B] hover:text-white hover:cursor-pointer transition-colors">
-            hello@vyas.com
+            <h4 className="relative group hover:cursor-pointer text-sm sm:text-base overflow-hidden">
+              <div className="flex flex-col">
+                <span className="group-hover:-translate-y-full transition-transform duration-300">hello@vyas.com</span>
+                <span className="absolute top-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">hello@vyas.com</span>
+              </div>
+              <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#D7492B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            </h4>
           </div>
         </div>
         <div className="hero-footer text-sm font-semibold text-[#D7492B] w-full px-12 flex justify-between items-center absolute bottom-5 left-0 overflow-hidden">
