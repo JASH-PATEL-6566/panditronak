@@ -78,7 +78,7 @@ const hero = () => {
     <>
       <div className="w-full px-10 h-screen relative bg-transparent">
         <div className="pandit_text absolute h-40  top-[15%] font-[Suisse init] text-[150px] leading-none font-extrabold text-[#D7492B] overflow-hidden ">
-          <h1 className="text">Pandit Ronk Vyas</h1>
+          <h1 className="text">Pandit Ronak Vyas</h1>
         </div>
         <div className="pandit_info absolute h-14 left-12  top-[35%] font-[Suisse init] text-5xl font-medium text-[#D7492B] overflow-hidden ">
           <h1 className="info">Vedic Scholar & Ritual Specialist</h1>
