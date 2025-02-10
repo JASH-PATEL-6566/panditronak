@@ -1,13 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Connect = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    reply_to: "",
     reason: "",
     message: "",
   });
+  const form = useRef();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,12 +21,34 @@ const Connect = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLET_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          setFormData({
+            from_name: "",
+            reply_to: "",
+            reason: "",
+            message: "",
+          });
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
   return (
     <>
-      <div className="connect mt-10 px-12 w-full h-screen">
+      <div id="connect" className="connect mt-10 px-12 w-full h-screen">
         <div className="connect_title text-[#D7492B]  h-[20vh] flex gap-2 justify-between items-center">
           <h1 className="text-8xl font-extrabold">Let's Connect</h1>
           <h1 className="text-8xl font-extrabold">
@@ -43,7 +67,7 @@ const Connect = () => {
           }}
         /> */}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-xl font-sans mb-2">
                   Name
@@ -51,7 +75,7 @@ const Connect = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full p-3 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-gray-300"
@@ -66,7 +90,7 @@ const Connect = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="reply_to"
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full p-3 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-gray-300"

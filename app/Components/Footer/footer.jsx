@@ -105,7 +105,7 @@ const Footer = () => {
         </div>
         <div className="time text-right">
           <p className="opacity-60 font-bold text-[1vw]">CODE AND DESIGN BY</p>
-          <p className="text-lg">KENIL AVAIYA</p>
+          <p className="text-lg">JASH PATEL & KENIL AVAIYA</p>
         </div>
       </div>
 

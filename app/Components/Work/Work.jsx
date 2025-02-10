@@ -58,7 +58,7 @@ const Work = () => {
     });
   }, []);
   return (
-    <div className="work w-full px-12 text-[#D7492B]  h-auto">
+    <div id="work" className="work w-full px-12 text-[#D7492B]  h-auto">
       <div className="work_title text-[#D7492B]  h-[20vh] flex gap-2 justify-between items-center">
         <h1 className="text-8xl font-extrabold">Work</h1>
         <h1 className="text-8xl font-extrabold">
