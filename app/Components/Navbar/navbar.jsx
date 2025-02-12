@@ -82,7 +82,7 @@ const navbar = () => {
           </div>
 
           {/* Mobile Logo */}
-          <h4 className="md:hidden text-[#D7492B] font-bold text-xl">V.</h4>
+          <h4 className="md:hidden text-[#d7492b] font-bold text-xl">V.</h4>
 
           <div className="nav_right hidden md:block">
             <h4
